@@ -108,6 +108,7 @@ int adc_fila_jogador2(struct no **fila_jogador2_ganhou, struct no **inicio_jogad
 void quadro_comeco();
 
 void imprimir(struct no *pi);
+
 //Variaveis globais
 int contar_operacoes = 0;
 int vitorias_jogador1 = 0;
@@ -133,8 +134,8 @@ void main()
 	float tempo_total = 0;
 	float tempo_menor = 9999999999999;
 	float tempo_maior = 0;
-	int    menor_rodada = 99999999999999;
-	int   maior_rodada = 0;
+	int  menor_rodada = 99999999999999;
+	int  maior_rodada = 0;
 
 	do{
 		int posicao = 1;
@@ -147,15 +148,11 @@ void main()
 		empates = 0;
 
 		struct no *fila = NULL;
-
 		int i = 1;
-
 		int resposta_comparar_cartas;
-
 		char carta_jogador1[3];
-
 		char carta_jogador2[3];
-
+		
 		struct no *inicio_jogador1 = NULL;
 		struct no *fim_jogador1 = NULL;
 
@@ -166,11 +163,8 @@ void main()
 		quadro_central();
 
 		gotoxy(25, 26);
-
 		printf("   A GUERRA DAS CARTAS   \n");
-
 		gotoxy(15, 33);
-
 		system("pause");
 
 		limpar_quadro();
